@@ -13,6 +13,12 @@ the `Mail\Transport\TransportInterface`.
 - File issues at https://github.com/laminas/laminas-mail/issues
 - Documentation is at https://docs.laminas.dev/laminas-mail/
 
+```
+use Laminas\Mail\Storage\Imap;
+use Laminas\Mail\Protocol\ImapOauth;
+use Laminas\Mail\Protocol\Imap as Laminas_Mail_Protocol_Imap;
+use Laminas\Mail\Storage;
+
 //Sample
 // Connecting with Imap:
 if($auth == 'token'){ //if auth is Oauth use ImapOauth interface
@@ -30,3 +36,4 @@ if($auth == 'token'){ //if auth is Oauth use ImapOauth interface
 if($mail){
   $mail->selectFolder("INBOX");
 }
+```
