@@ -1,5 +1,5 @@
 {
-    "name": "laminas/laminas-mail",
+    "name": "aramics/laminas-mail",
     "description": "Provides generalized functionality to compose and send both text and MIME-compliant multipart e-mail messages",
     "license": "BSD-3-Clause",
     "keywords": [
@@ -71,5 +71,7 @@
     },
     "replace": {
         "zendframework/zend-mail": "^2.10.0"
-    }
+    },
+    minimum-stability": "dev",
+    "prefer-stable": true
 }
