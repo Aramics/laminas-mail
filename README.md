@@ -35,5 +35,10 @@ if($auth == 'token'){ //if auth is Oauth use ImapOauth interface
 
 if($mail){
   $mail->selectFolder("INBOX");
+  $filter = array('SUBJECT "RE:"'); //search for reply in mailbox
+  $messages = (array)$mail->search($filter); 
+  foreach ($messages as $key => $UID) {
+   //do something 
+   }
 }
 ```
