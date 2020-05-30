@@ -543,4 +543,12 @@ class Imap extends AbstractStorage implements Folder\FolderInterface, Writable\W
         }
         return $this->delimiter;
     }
+    
+    /**
+     * Search mailbox
+     *
+    **/
+    public function search($params = null) {
+        return $this->protocol->search($params);
+    }
 }
