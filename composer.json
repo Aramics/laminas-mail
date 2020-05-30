@@ -72,6 +72,6 @@
     "replace": {
         "zendframework/zend-mail": "^2.10.0"
     },
-    minimum-stability": "dev",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
